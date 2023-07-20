@@ -91,6 +91,7 @@ nav a:hover {
     text-align: center;
 }
 @media screen and (min-width: 800px) {
+    /* Menu */
     nav ul {
         display: flex;
         justify-content: space-between;
@@ -102,5 +103,26 @@ nav a:hover {
 
     nav ul li :nth-child(3){
         order: 1;
+    }
+     /* Card */
+
+     .section-one {
+        display: flex;
+        justify-content: center;
+        justify-content: space-between;
+        padding: 0;
+     }
+
+     .card{
+        margin: 0;
+        flex-basis: 32%;
+        display: flex;
+        flex-direction: column;
+        margin: 20px;
+        
+     }
+
+     .card-body {
+        flex-grow: 1;
     }
 }
