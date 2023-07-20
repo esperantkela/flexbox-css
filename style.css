@@ -28,6 +28,7 @@ main {
 footer  {
     background: var(--soft-dark);
     display: flex;
+    margin-top: 20px;
 }
 
 .wrapper {
@@ -36,8 +37,11 @@ footer  {
     margin: 0 auto;
 }
 
-nav {
+.copyright{
+    padding: 25px;
+    color: var(--white-color);
 }
+
 
 nav ul {
     list-style-type: none;
@@ -90,6 +94,30 @@ nav a:hover {
     text-transform: uppercase;
     text-align: center;
 }
+
+.section-two {
+   display: flex;
+   flex-direction: column;
+}
+.section-two > div {
+    background-color: var(--dark-orange);
+    padding: 15px;
+    color: var(--white-color);
+    text-align: center;
+    cursor: pointer;
+}
+
+.section-two > div:hover {
+    background-color: var(--soft-dark);
+    padding: 15px;
+    color: var(--white-color);
+    text-align: center;
+   
+}
+
+.selected {
+    flex-basis: 200px;
+}
 @media screen and (min-width: 800px) {
     /* Menu */
     nav ul {
@@ -123,6 +151,17 @@ nav a:hover {
      }
 
      .card-body {
+        flex-grow: 1;
+    }
+
+    .section-two {
+        flex-direction: row;
+        height: 300px;
+        border: 1 solid var(--soft-dark);
+        padding: 10px;
+    }
+
+    .selected {
         flex-grow: 1;
     }
 }
