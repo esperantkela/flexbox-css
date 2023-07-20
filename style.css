@@ -118,6 +118,18 @@ nav a:hover {
 .selected {
     flex-basis: 200px;
 }
+
+.section-three{
+    margin-top: 20px;
+    padding: 20px;
+}
+
+article {
+    background-color: var(--white-color);
+    border: 1 solid var(--soft-dark);
+    padding: 10px;
+    margin-bottom: 20px;
+}
 @media screen and (min-width: 800px) {
     /* Menu */
     nav ul {
@@ -163,5 +175,15 @@ nav a:hover {
 
     .selected {
         flex-grow: 1;
+    }
+
+    .section-three {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    article {
+        flex-basis: 46%;
     }
 }
